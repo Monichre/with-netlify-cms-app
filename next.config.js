@@ -1,9 +1,10 @@
 module.exports = {
-  webpack: (configuration) => {
-    configuration.module.rules.push({
+  webpack: (cfg) => {
+    cfg.module.rules.push({
       test: /\.md$/,
-      use: 'frontmatter-markdown-loader',
+      loader: 'frontmatter-markdown-loader',
+      options: { mode: ['react-component'] },
     })
-    return configuration
+    return cfg
   },
 }
