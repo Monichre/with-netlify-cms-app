@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 const HeaderDiv = styled.header`
@@ -70,25 +70,25 @@ const Header = ({ siteTitle, logo }: Props) => (
     <nav id='nav'>
       <ul>
         <li>
-          <Link to='/'>Home</Link>
+          <Link href='/'>Home</Link>
         </li>
         <li>
-          <Link to='/#one'>About</Link>
+          <Link href='/#one'>About</Link>
         </li>
         <li>
-          <Link to='/#two'>Why Gotham</Link>
+          <Link href='/#two'>Why Gotham</Link>
         </li>
         <li>
-          <Link to='/clients'>Clients</Link>
+          <Link href='/clients'>Clients</Link>
         </li>
         <li>
-          <Link to='/#work'>Gallery</Link>
+          <Link href='/#work'>Gallery</Link>
         </li>
         {/* <li>
-          <Link to='/glassRepair'>Glass Repair</Link>
+          <Link href='/glassRepair'>Glass Repair</Link>
         </li> */}
         <li>
-          <Link to='/#contact'>Contact</Link>
+          <Link href='/#contact'>Contact</Link>
         </li>
       </ul>
     </nav>
